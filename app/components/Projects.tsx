@@ -59,22 +59,25 @@ export default function Projects() {
         <Reveal>
           <article className="featured-project project-card">
             <div className="project-copy">
-              <ProjectName name="ObraSync" icon="building" green />
+              <ProjectName name="BlogNodejs" icon="globe" green />
               <p>
-                Sistema web para gestão e vistoria de obras. Organiza o
-                acompanhamento de processos, o registro de evidências e a
-                geração de laudos para o setor da construção civil.
+                Blog fullstack para publicar e consultar conteúdos organizados
+                por categorias, com cadastro, autenticação de usuários e área
+                administrativa.
               </p>
-              <Tags items={["Java", "PrimeFaces", "PostgreSQL", "Docker"]} />
+              <Tags
+                items={["Node.js", "Express", "Handlebars", "MongoDB"]}
+              />
               <ProjectLinks
-                project="https://github.com/joao-juvino/ObraSync#readme"
-                code="https://github.com/joao-juvino/ObraSync"
+                project="https://blognodejs-a41d.onrender.com/"
+                code="https://github.com/joao-juvino/BlogNodejs"
               />
               <small className="project-note">
-                Documentação no GitHub · demonstração local
+                Aplicação pública no Render · pode levar alguns segundos para
+                iniciar
               </small>
             </div>
-            <ProjectVisual kind="obrasync" />
+            <ProjectVisual kind="blog" />
           </article>
         </Reveal>
         <Reveal>
@@ -110,21 +113,18 @@ export default function Projects() {
           <Reveal delay={0.1}>
             <article className="project-card secondary-project">
               <div className="project-copy">
-                <ProjectName name="PiiCheck" icon="shield" green />
+                <ProjectName name="ObraSync" icon="building" green />
                 <p>
-                  API para análise de dados pessoais em textos, com
-                  processamento assíncrono de tarefas, autenticação e
-                  documentação de endpoints.
+                  Sistema web para gestão e vistoria de obras, com registro de
+                  evidências e geração de laudos para a construção civil.
                 </p>
-                <Tags
-                  items={["Python", "Flask", "Celery", "Redis", "Docker"]}
-                />
+                <Tags items={["Java", "PrimeFaces", "PostgreSQL", "Docker"]} />
                 <ProjectLinks
-                  project="https://github.com/joao-juvino/piicheck#readme"
-                  code="https://github.com/joao-juvino/piicheck"
+                  project="https://github.com/joao-juvino/ObraSync#readme"
+                  code="https://github.com/joao-juvino/ObraSync"
                 />
               </div>
-              <ProjectVisual kind="pii" />
+              <ProjectVisual kind="obrasync-compact" />
             </article>
           </Reveal>
         </div>

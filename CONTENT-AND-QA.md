@@ -2,7 +2,7 @@
 
 ## Direção e fontes
 
-- Referência: imagem `ChatGPT Image 25 de set. de 2026, 15_28_05.png` e instruções completas fornecidas pelo usuário. Página longa: hero, ObraSync, dois projetos complementares, experiência, competências, apresentação, recomendações e rodapé.
+- Referência: imagem `ChatGPT Image 25 de set. de 2026, 15_28_05.png` e instruções completas fornecidas pelo usuário. Página longa: hero, BlogNodejs, dois projetos complementares, experiência, competências, apresentação, recomendações e rodapé.
 - Identidade branca e azul, Manrope/Inter, retrato original sobre oval claro. Não há WebGL, rosto gerado, métricas inventadas ou tema incompleto.
 - Retrato existente preservado: `public/media/joao-santos-cutout.webp`, 1122 × 1402. Sem alteração das proporções ou identidade.
 - Experiência, competências, formação e recomendações: dados expressamente fornecidos pelo usuário em 25/09/2026. Não foi inferida conclusão do curso nem significado do ano 2021.
@@ -11,9 +11,9 @@
 
 ## Projetos verificados
 
-- [ObraSync](https://github.com/joao-juvino/ObraSync): README e árvore pública confirmam Java, Jakarta EE, JSF/PrimeFaces, JAX-RS, JPA, PostgreSQL e Docker. Gestão/vistoria de obras, evidências e relatórios. O diretório de screenshots contém somente instruções; não há captura real nem demo pública publicada. A apresentação usa um diagrama de arquitetura explicitamente identificado, não um dashboard fictício. “Ver projeto” abre a documentação; “Ver código” abre o repositório.
+- [BlogNodejs](https://github.com/joao-juvino/BlogNodejs): aplicação pública no Render e código confirmam Node.js, Express, Handlebars, MongoDB/Mongoose, posts, categorias, cadastro/login e área administrativa. “Ver projeto” abre a aplicação publicada; “Ver código” abre o repositório. A apresentação usa uma representação técnica explicitamente identificada, não uma captura fictícia.
 - [Companages](https://github.com/joao-juvino/companages): aplicação fullstack para organizar empresas e equipes em workspaces privados. README, árvore e linguagens confirmam Angular 22, Java 17/Spring Boot 3, PostgreSQL 17, Flyway e Docker. Como o repositório não publica captura da interface, a apresentação usa um modelo de domínio explicitamente identificado.
-- [PiiCheck](https://github.com/joao-juvino/piicheck): Python/Flask, tarefas Celery, Redis, Docker. Representação do fluxo técnico, sem atribuir FastAPI ou uma interface inexistente.
+- [ObraSync](https://github.com/joao-juvino/ObraSync): README e árvore pública confirmam Java, Jakarta EE, JSF/PrimeFaces, JAX-RS, JPA, PostgreSQL e Docker. Gestão/vistoria de obras, evidências e relatórios. Não há captura real nem demo pública publicada; “Ver projeto” abre a documentação. A apresentação usa um fluxo técnico explicitamente identificado.
 - Projetos legados removidos da página conforme a solicitação de apresentar somente estes três. Cinco imagens antigas sem uso removidas; recuperáveis no Git.
 
 ## Arquitetura e compatibilidade
@@ -35,7 +35,7 @@
 
 ## Pendências opcionais de fidelidade visual
 
-- Captura real do ObraSync e do Companages (idealmente 1600 × 1000 ou maior) e URLs de demonstração, se houver. Até lá, permanecem os diagramas técnicos e os links para documentação.
+- Captura real do ObraSync e do Companages (idealmente 1600 × 1000 ou maior) e URLs de demonstração, se houver. Até lá, permanecem os diagramas técnicos e os links para documentação. O BlogNodejs já possui uma URL pública.
 - A formação aparece sem situação de conclusão ou data. Informar esses detalhes somente se desejar exibi-los.
 
-Não houve publicação, push ou alteração de conta externa nesta tarefa.
+Esta atualização será publicada pelo fluxo existente do GitHub Pages após o push para a branch `main`.

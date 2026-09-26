@@ -18,7 +18,8 @@ for (const match of html.matchAll(/<img\b[^>]*>/g)) {
     assert(existsSync(path.join("out", source)), `Missing image: ${source}`);
 }
 for (const url of [
-  "https://github.com/joao-juvino/piicheck",
+  "https://blognodejs-a41d.onrender.com/",
+  "https://github.com/joao-juvino/BlogNodejs",
   "https://github.com/joao-juvino/ObraSync",
   "https://github.com/joao-juvino/companages",
   "https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=joao.santoss75180@gmail.com",
@@ -35,7 +36,12 @@ assert.equal(
   3,
   "Expected exactly three project cards",
 );
-assert(html.includes("ObraSync") && html.indexOf("ObraSync") < html.indexOf("Companages") && html.indexOf("Companages") < html.indexOf("PiiCheck"), "Incorrect project order");
+assert(
+  html.includes("BlogNodejs") &&
+    html.indexOf("BlogNodejs") < html.indexOf("Companages") &&
+    html.indexOf("Companages") < html.indexOf("ObraSync"),
+  "Incorrect project order",
+);
 assert(html.includes("/media/rebeca-luana-lopes.jpeg"));
 assert(html.includes("/media/jamiris-santos.jpeg"));
 assert.equal(

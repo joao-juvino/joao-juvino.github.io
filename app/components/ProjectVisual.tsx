@@ -3,32 +3,53 @@ import Icon from "./Icon";
 export default function ProjectVisual({
   kind,
 }: {
-  kind: "obrasync" | "companages" | "pii";
+  kind: "blog" | "companages" | "obrasync-compact";
 }) {
-  if (kind === "pii")
+  if (kind === "blog")
     return (
       <div
-        className="pii-diagram"
-        aria-label="Fluxo técnico simplificado do PiiCheck"
+        className="blog-diagram"
+        aria-label="Representação técnica do BlogNodejs"
       >
-        <div className="diagram-brand">
-          <Icon name="shield" /> PiiCheck
+        <div className="blog-browser">
+          <div className="browser-bar" aria-hidden="true">
+            <span /><span /><span />
+            <small>blog.node</small>
+          </div>
+          <div className="blog-preview">
+            <span className="blog-kicker">CONTEÚDO &amp; TECNOLOGIA</span>
+            <strong>Blog do Node</strong>
+            <p>Postagens recentes organizadas por categoria.</p>
+            <div className="post-preview">
+              <span>ARTIGO</span>
+              <b>Uma publicação por vez.</b>
+              <i>Leia mais</i>
+            </div>
+          </div>
         </div>
-        <strong>
-          Dados pessoais.
-          <br />
-          Um fluxo de análise.
-        </strong>
-        <div className="flow-node">Texto recebido</div>
-        <span className="flow-line" />
-        <div className="flow-node blue-node">API Flask</div>
-        <span className="flow-line" />
-        <div className="flow-node">Celery + Redis</div>
-        <span className="flow-line" />
-        <div className="flow-result">
-          <Icon name="shield" /> Resultado da análise
+        <div className="blog-architecture">
+          <div className="diagram-heading">
+            <span>Publicação ponta a ponta.</span>
+            <small>FLUXO DA APLICAÇÃO</small>
+          </div>
+          <div className="blog-stack-node">
+            <Icon name="globe" />
+            <div><strong>Express + Handlebars</strong><small>Rotas e páginas renderizadas</small></div>
+          </div>
+          <span className="flow-line" />
+          <div className="blog-stack-node emphasis">
+            <Icon name="server" />
+            <div><strong>Posts e categorias</strong><small>Cadastro · login · administração</small></div>
+          </div>
+          <span className="flow-line" />
+          <div className="blog-stack-node">
+            <Icon name="database" />
+            <div><strong>MongoDB</strong><small>Persistência com Mongoose</small></div>
+          </div>
+          <small className="diagram-caption">
+            Representação técnica · não é uma captura de tela
+          </small>
         </div>
-        <small>Fluxo técnico simplificado</small>
       </div>
     );
   if (kind === "companages")
@@ -66,64 +87,30 @@ export default function ProjectVisual({
     );
   return (
     <div
-      className="obra-diagram"
-      aria-label="Arquitetura simplificada do ObraSync"
+      className="obra-compact-diagram"
+      aria-label="Fluxo técnico simplificado do ObraSync"
     >
-      <aside className="diagram-sidebar">
-        <span className="diagram-brand">
-          <Icon name="building" /> ObraSync
-        </span>
-        <span className="sidebar-active">
-          <Icon name="architecture" /> Arquitetura
-        </span>
-        <span>
-          <Icon name="building" /> Obras e vistorias
-        </span>
-        <span>
-          <Icon name="shield" /> Autenticação
-        </span>
-        <span>
-          <Icon name="code" /> Relatórios PDF
-        </span>
-        <small>JAVA · JAKARTA EE</small>
-      </aside>
-      <div className="diagram-canvas">
-        <div className="diagram-heading">
-          <span>Do acompanhamento ao registro.</span>
-          <small>MAPA DO SISTEMA</small>
-        </div>
-        <div className="diagram-inputs">
-          <div className="flow-node">
-            <Icon name="code" />
-            <strong>Interface web</strong>
-            <small>JSF · PrimeFaces</small>
-          </div>
-          <div className="flow-node">
-            <Icon name="server" />
-            <strong>API REST</strong>
-            <small>JAX-RS · JWT</small>
-          </div>
-        </div>
-        <div className="connector" />
-        <div className="flow-node service-node">
-          <Icon name="building" />
-          <div>
-            <strong>Serviços Java</strong>
-            <small>Obras · vistorias · evidências</small>
-          </div>
+      <div className="diagram-brand">
+        <Icon name="building" /> ObraSync
+      </div>
+      <strong>
+        Da vistoria
+        <br /> ao laudo técnico.
+      </strong>
+      <div className="obra-compact-flow">
+        <div className="flow-node blue-node">
+          <Icon name="building" /> <span>Obras</span>
         </div>
         <span className="flow-line" />
-        <div className="flow-node database-node">
-          <Icon name="database" />
-          <div>
-            <strong>PostgreSQL</strong>
-            <small>Persistência com JPA</small>
-          </div>
+        <div className="flow-node">
+          <Icon name="architecture" /> <span>Vistorias e evidências</span>
         </div>
-        <div className="diagram-caption">
-          Arquitetura simplificada · não é uma captura de tela
+        <span className="flow-line" />
+        <div className="flow-node result-node">
+          <Icon name="code" /> <span>Relatórios PDF</span>
         </div>
       </div>
+      <small>Fluxo técnico simplificado</small>
     </div>
   );
 }

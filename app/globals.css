@@ -592,58 +592,107 @@ footer[id] {
   width: 14px;
   height: 14px;
 }
-.obra-diagram {
+.blog-diagram {
   display: grid;
-  grid-template-columns: 155px 1fr;
-  border: 1px solid #e8edf4;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 6px 17px #14244009;
+  grid-template-columns: 1.08fr 0.92fr;
   min-height: 360px;
+  border: 1px solid #e5edf8;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f5f8ff;
+  box-shadow: 0 8px 24px #1424400a;
 }
-.diagram-sidebar {
-  background: #1b2534;
-  color: #a7b8cb;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 10px;
-  gap: 19px;
-  font-size: 9px;
+.blog-browser {
+  align-self: center;
+  margin: 24px 0 24px 24px;
+  overflow: hidden;
+  border: 1px solid #dde7f5;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 16px 35px #24477214;
 }
-.diagram-sidebar > span {
+.browser-bar {
   display: flex;
   align-items: center;
+  gap: 5px;
+  min-height: 31px;
+  padding: 0 11px;
+  border-bottom: 1px solid #edf1f7;
+}
+.browser-bar > span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #b8c8dc;
+}
+.browser-bar > span:first-child {
+  background: var(--blue);
+}
+.browser-bar small {
+  margin-left: auto;
+  color: #8391a7;
+  font: 7px "JetBrains Mono", monospace;
+}
+.blog-preview {
+  min-height: 270px;
+  padding: 29px 26px;
+  background:
+    radial-gradient(circle at 90% 10%, #dfeaff 0 11%, transparent 11.5%),
+    linear-gradient(150deg, #fff 35%, #f1f6ff);
+}
+.blog-kicker {
+  display: block;
+  margin-bottom: 13px;
+  color: var(--blue);
+  font: 7px "JetBrains Mono", monospace;
+  letter-spacing: 0.14em;
+}
+.blog-preview > strong {
+  display: block;
+  color: var(--ink);
+  font-size: 28px;
+  letter-spacing: -0.05em;
+}
+.blog-preview > p {
+  max-width: 220px;
+  margin: 8px 0 22px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+.post-preview {
+  display: grid;
   gap: 7px;
-  padding-inline: 5px;
+  padding: 15px;
+  border: 1px solid #e4ebf5;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 0 5px 18px #17325a0a;
 }
-.diagram-sidebar svg {
-  width: 14px;
-  height: 14px;
+.post-preview span {
+  color: var(--blue);
+  font: 6px "JetBrains Mono", monospace;
+  letter-spacing: 0.12em;
 }
-.diagram-sidebar .diagram-brand {
-  color: white;
-  font-weight: 600;
-  font-size: 13px;
-  margin-bottom: 9px;
+.post-preview b {
+  font-size: 10px;
 }
-.diagram-sidebar .sidebar-active {
-  padding: 9px 6px;
-  background: #ffffff10;
-  border-radius: 5px;
-  color: #fff;
+.post-preview i {
+  width: max-content;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #8eb5fa;
+  color: var(--blue);
+  font-size: 8px;
+  font-style: normal;
 }
-.diagram-sidebar > small {
-  font-size: 7px;
-  letter-spacing: 0.13em;
-  margin-top: auto;
-  padding-top: 30px;
-}
-.diagram-canvas {
-  padding: 23px;
-  background: #f7faff;
+.blog-architecture {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
+  padding: 24px 22px;
+  background: #172238;
+  color: #fff;
 }
 .diagram-heading {
   width: 100%;
@@ -661,12 +710,6 @@ footer[id] {
   color: #8696ad;
   letter-spacing: 0.08em;
 }
-.diagram-inputs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  width: 100%;
-}
 .flow-node {
   border: 1px solid #e4ebf5;
   background: #fff;
@@ -675,12 +718,6 @@ footer[id] {
   padding: 13px;
   text-align: center;
   font-size: 11px;
-}
-.diagram-inputs .flow-node {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 7px;
 }
 .flow-node svg {
   color: var(--blue);
@@ -694,36 +731,47 @@ footer[id] {
   color: var(--muted);
   font-size: 9px;
 }
-.connector {
-  height: 20px;
-  width: 52%;
-  border: 1px solid #bdd2f7;
-  border-top: 0;
-  border-radius: 0 0 5px 5px;
-  margin-bottom: 17px;
-  position: relative;
-}
-.connector:after {
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: 17px;
-  background: #bdd2f7;
-  bottom: -17px;
-  left: 50%;
-}
-.service-node,
-.database-node {
+.blog-stack-node {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 13px;
-  width: 90%;
-  padding: 11px;
+  gap: 10px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ffffff1a;
+  border-radius: 7px;
+  background: #ffffff0a;
 }
-.service-node {
-  background: #edf4ff;
-  border-color: #cbdcfa;
+.blog-stack-node.emphasis {
+  border-color: #3f7ff0;
+  background: #155eef;
+}
+.blog-stack-node svg {
+  width: 18px;
+  flex-shrink: 0;
+  color: #70a3ff;
+}
+.blog-stack-node.emphasis svg {
+  color: #fff;
+}
+.blog-stack-node strong,
+.blog-stack-node small {
+  display: block;
+}
+.blog-stack-node strong {
+  font-size: 9px;
+  font-weight: 600;
+}
+.blog-stack-node small {
+  margin-top: 3px;
+  color: #aebbd0;
+  font-size: 7px;
+}
+.blog-stack-node.emphasis small {
+  color: #dce8ff;
+}
+.blog-architecture .flow-line {
+  height: 17px;
+  background: #45607f;
 }
 .flow-line {
   display: block;
@@ -738,61 +786,63 @@ footer[id] {
   margin-top: 20px;
   text-align: center;
 }
-.pii-diagram {
-  padding: 18px 12px;
+.blog-architecture .diagram-caption {
+  margin-top: 15px;
+  color: #8294ad;
+}
+.obra-compact-diagram {
+  padding: 18px 14px;
   background: linear-gradient(140deg, #f6fbff, #fff);
   border: 1px solid #e5eef9;
   border-radius: 8px;
   min-width: 0;
   box-shadow: 0 5px 20px #17223805;
 }
-.pii-diagram .diagram-brand {
+.obra-compact-diagram .diagram-brand {
   display: flex;
   align-items: center;
   gap: 5px;
   font-size: 10px;
-  color: #048e78;
+  color: var(--blue);
   font-weight: 700;
   margin-bottom: 17px;
 }
-.pii-diagram .diagram-brand svg {
+.obra-compact-diagram .diagram-brand svg {
   width: 14px;
   height: 14px;
 }
-.pii-diagram > strong {
+.obra-compact-diagram > strong {
   font-size: 12px;
   line-height: 1.4;
   display: block;
   margin-bottom: 17px;
   letter-spacing: -0.04em;
 }
-.pii-diagram .flow-node {
-  font-size: 9px;
-  padding: 9px;
-}
-.pii-diagram .blue-node {
-  color: var(--blue);
-  background: #eef5ff;
-}
-.pii-diagram .flow-line {
-  height: 12px;
-}
-.flow-result {
+.obra-compact-flow .flow-node {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  background: var(--blue);
-  color: #fff;
-  border-radius: 5px;
-  font-size: 8px;
-  padding: 9px 4px;
+  gap: 6px;
+  font-size: 9px;
+  padding: 9px;
 }
-.flow-result svg {
-  width: 12px;
+.obra-compact-flow .flow-node svg {
+  width: 13px;
+  height: 13px;
+}
+.obra-compact-flow .blue-node {
+  color: var(--blue);
+  background: #eef5ff;
+}
+.obra-compact-flow .result-node {
+  color: #067867;
+  border-color: #c8ece4;
+  background: #effaf7;
+}
+.obra-compact-flow .flow-line {
   height: 12px;
 }
-.pii-diagram > small {
+.obra-compact-diagram > small {
   font-size: 7px;
   display: block;
   color: var(--muted);
@@ -1299,14 +1349,11 @@ details[open] .label-open {
     gap: 23px;
     padding: 23px;
   }
-  .obra-diagram {
-    grid-template-columns: 120px 1fr;
+  .blog-diagram {
+    grid-template-columns: 1fr 0.9fr;
   }
-  .diagram-sidebar {
-    font-size: 8px;
-  }
-  .diagram-canvas {
-    padding: 18px;
+  .blog-browser {
+    margin: 18px 0 18px 18px;
   }
   .secondary-project {
     padding: 22px;
@@ -1431,14 +1478,14 @@ details[open] .label-open {
   .project-copy > p {
     font-size: 12px;
   }
-  .obra-diagram {
+  .blog-diagram {
     grid-template-columns: 1fr;
   }
-  .diagram-sidebar {
+  .blog-browser {
     display: none;
   }
-  .diagram-canvas {
-    padding: 18px;
+  .blog-architecture {
+    min-height: 310px;
   }
   .secondary-projects {
     gap: 16px;
@@ -1460,24 +1507,8 @@ details[open] .label-open {
   .secondary-project .project-links {
     margin-bottom: 5px;
   }
-  .pii-diagram {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    align-items: center;
-  }
-  .pii-diagram .flow-line {
-    display: none;
-  }
-  .pii-diagram > strong {
-    margin: 0;
-    font-size: 11px;
-  }
-  .pii-diagram .diagram-brand {
-    margin: 0;
-  }
-  .pii-diagram > small {
-    margin: 0;
+  .obra-compact-diagram {
+    width: 100%;
   }
   .section-grid {
     grid-template-columns: 1fr 1.65fr;
@@ -1678,17 +1709,23 @@ details[open] .label-open {
   .project-note {
     font-size: 9px;
   }
-  .obra-diagram {
+  .blog-diagram {
     min-height: 0;
   }
-  .diagram-canvas {
-    padding: 20px;
+  .blog-browser {
+    display: block;
+    margin: 18px 18px 0;
+  }
+  .blog-preview {
+    min-height: 245px;
+    padding: 25px 22px;
+  }
+  .blog-architecture {
+    min-height: 280px;
+    padding: 22px 18px;
   }
   .diagram-heading {
     font-size: 12px;
-  }
-  .diagram-inputs {
-    gap: 14px;
   }
   .diagram-caption {
     font-size: 8px;
@@ -1710,7 +1747,7 @@ details[open] .label-open {
     min-height: 40px;
     padding: 10px 13px;
   }
-  .secondary-project .pii-diagram {
+  .secondary-project .obra-compact-diagram {
     margin-top: 6px;
     padding: 20px;
   }
