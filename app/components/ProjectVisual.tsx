@@ -9,42 +9,42 @@ export default function ProjectVisual({
     return (
       <div
         className="blog-diagram"
-        aria-label="Representação técnica do BlogNodejs"
+        aria-label="Representação técnica do Juvino Tech"
       >
         <div className="blog-browser">
           <div className="browser-bar" aria-hidden="true">
             <span /><span /><span />
-            <small>blog.node</small>
+            <small>juvino.tech</small>
           </div>
           <div className="blog-preview">
             <span className="blog-kicker">CONTEÚDO &amp; TECNOLOGIA</span>
-            <strong>Blog do Node</strong>
-            <p>Postagens recentes organizadas por categoria.</p>
+            <strong>Juvino Tech</strong>
+            <p>Engenharia de software explicada com clareza.</p>
             <div className="post-preview">
               <span>ARTIGO</span>
-              <b>Uma publicação por vez.</b>
+              <b>Decisões técnicas, arquitetura e prática.</b>
               <i>Leia mais</i>
             </div>
           </div>
         </div>
         <div className="blog-architecture">
           <div className="diagram-heading">
-            <span>Publicação ponta a ponta.</span>
+            <span>Conteúdo ponta a ponta.</span>
             <small>FLUXO DA APLICAÇÃO</small>
           </div>
           <div className="blog-stack-node">
             <Icon name="globe" />
-            <div><strong>Express + Handlebars</strong><small>Rotas e páginas renderizadas</small></div>
+            <div><strong>Angular</strong><small>Leitura, busca e editor Markdown</small></div>
           </div>
           <span className="flow-line" />
           <div className="blog-stack-node emphasis">
             <Icon name="server" />
-            <div><strong>Posts e categorias</strong><small>Cadastro · login · administração</small></div>
+            <div><strong>Spring Boot</strong><small>API REST · JWT · administração</small></div>
           </div>
           <span className="flow-line" />
           <div className="blog-stack-node">
             <Icon name="database" />
-            <div><strong>MongoDB</strong><small>Persistência com Mongoose</small></div>
+            <div><strong>PostgreSQL</strong><small>Persistência com JPA e Flyway</small></div>
           </div>
           <small className="diagram-caption">
             Representação técnica · não é uma captura de tela

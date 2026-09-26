@@ -59,22 +59,21 @@ export default function Projects() {
         <Reveal>
           <article className="featured-project project-card">
             <div className="project-copy">
-              <ProjectName name="BlogNodejs" icon="globe" green />
+              <ProjectName name="Juvino Tech" icon="globe" green />
               <p>
-                Blog fullstack para publicar e consultar conteúdos organizados
-                por categorias, com cadastro, autenticação de usuários e área
-                administrativa.
+                Blog técnico fullstack com experiência editorial em Markdown,
+                busca e filtros, além de uma área administrativa protegida por
+                autenticação JWT.
               </p>
               <Tags
-                items={["Node.js", "Express", "Handlebars", "MongoDB"]}
+                items={["Angular", "Spring Boot", "PostgreSQL", "Docker"]}
               />
               <ProjectLinks
-                project="https://blognodejs-a41d.onrender.com/"
-                code="https://github.com/joao-juvino/BlogNodejs"
+                project="https://github.com/joao-juvino/blog#readme"
+                code="https://github.com/joao-juvino/blog"
               />
               <small className="project-note">
-                Aplicação pública no Render · pode levar alguns segundos para
-                iniciar
+                Documentação no GitHub · deploy preparado para Render
               </small>
             </div>
             <ProjectVisual kind="blog" />
