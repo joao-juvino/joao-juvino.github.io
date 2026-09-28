@@ -9,7 +9,7 @@ const publications = [
     title: "Clean Code na prática: princípios para código mais legível",
     description:
       "Princípios essenciais de Clean Code aplicados a exemplos práticos para escrever software mais simples, legível e fácil de manter.",
-    href: `${BLOG_URL}/artigos/clean-code-na-pratica-principios-para-codigo-mais-legivel`,
+    href: `${BLOG_URL}/artigos/clean-code-na-pratica`,
   },
   {
     type: "solid",
