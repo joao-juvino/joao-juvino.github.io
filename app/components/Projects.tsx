@@ -69,11 +69,11 @@ export default function Projects() {
                 items={["Angular", "Spring Boot", "PostgreSQL", "Docker"]}
               />
               <ProjectLinks
-                project="https://github.com/joao-juvino/blog#readme"
+                project="https://juvino-blog.onrender.com/"
                 code="https://github.com/joao-juvino/blog"
               />
               <small className="project-note">
-                Documentação no GitHub · deploy preparado para Render
+                Aplicação publicada no Render · código e documentação no GitHub
               </small>
             </div>
             <ProjectVisual kind="blog" />
