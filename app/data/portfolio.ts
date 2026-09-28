@@ -3,6 +3,7 @@ import type { IconName } from "../components/Icon";
 export const navigation = [
   ["Início", "inicio"],
   ["Projetos", "projetos"],
+  ["Publicações", "publicacoes"],
   ["Experiência", "experiencia"],
   ["Competências", "competencias"],
   ["Sobre", "sobre"],
